@@ -1,0 +1,123 @@
+.home-page {
+  padding-top: var(--header-height); /* Push content down below fixed nav */
+}
+
+/* Hero Section */
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Equal split */
+  align-items: center;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  min-height: 80vh; /* Takes up most of the screen */
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: -0.03em; /* Tight kerning looks expensive */
+  line-height: 1.1;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--primary-light);
+  margin-bottom: 2.5rem;
+  max-width: 90%;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: var(--shadow-md);
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--primary);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #f1f5f9;
+}
+
+/* 3D Visual Area */
+.hero-visual {
+  position: relative;
+  height: 500px;
+  background: radial-gradient(circle at center, #e2e8f0 0%, transparent 70%); /* Subtle glow behind 3D */
+}
+
+/* Category Section */
+.category-section {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+.section-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.category-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  border: 1px solid #f1f5f9;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent);
+}
+
+.card-link {
+  margin-top: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent);
+  font-weight: 600;
+}

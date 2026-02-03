@@ -1,0 +1,41 @@
+:root {
+  /* Professional Color Palette */
+  --primary: #0f172a;       /* Deep Navy (Trust) */
+  --primary-light: #334155; /* Slate (Text) */
+  --accent: #2563eb;        /* Electric Blue (Action) */
+  --accent-hover: #1d4ed8;  
+  --bg-light: #f8fafc;      /* Clean background */
+  --white: #ffffff;
+  
+  /* Spacing & Layout */
+  --radius: 12px;
+  --container-width: 1200px;
+  --header-height: 80px;
+  
+  /* Shadows (The secret to depth) */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif; /* The new font */
+  background-color: var(--bg-light);
+  color: var(--primary);
+  -webkit-font-smoothing: antialiased; /* Makes text look sharper on Mac */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
