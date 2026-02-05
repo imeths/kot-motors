@@ -121,3 +121,32 @@
   color: var(--accent);
   font-weight: 600;
 }
+
+/* --- Mobile Optimizations --- */
+@media (max-width: 768px) {
+  
+  /* 1. Hide the 3D Container completely */
+  .hero-visual {
+    display: none;
+  }
+
+  /* 2. Make the text section take up full width */
+  .hero-container {
+    grid-template-columns: 1fr; /* Single column layout */
+    text-align: center; /* Center text since there's no visual on the right */
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    min-height: auto; /* Remove fixed height constraint */
+  }
+
+  /* 3. Center the buttons */
+  .hero-buttons {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* 4. Adjust font size so it doesn't break small screens */
+  .hero-text h1 {
+    font-size: 2.5rem; 
+  }
+}

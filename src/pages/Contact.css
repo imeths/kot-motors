@@ -1,0 +1,184 @@
+/* --- HERO SECTION REUSE --- */
+/* (Reusing the premium hero styles from AutoAC for consistency) */
+.contact-hero {
+  position: relative;
+  background-color: #0f172a;
+  color: white;
+  padding: 8rem 2rem 6rem;
+  text-align: center;
+  overflow: hidden;
+  background-image: radial-gradient(#334155 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.contact-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(37,99,235,0.15) 0%, transparent 60%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #ffffff, #cbd5e1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.contact-hero p {
+  color: #94a3b8;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* --- MAIN CONTENT LAYOUT --- */
+.contact-container {
+  max-width: 1200px;
+  margin: 4rem auto 4rem; /* Negative margin pulls it up into the Hero */
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Split 50/50 */
+  gap: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+/* --- LEFT COLUMN: MAP CARD --- */
+.map-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+  height: 100%;
+  min-height: 600px; /* Tall map */
+  position: relative;
+}
+
+.map-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  /* CSS Filter to make the map look "Premium" (Less saturation) */
+  filter: grayscale(20%) contrast(1.1); 
+}
+
+/* Floating Contact Info Overlay on Map */
+.map-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0.8rem;
+  color: #334155;
+  font-weight: 500;
+}
+
+.contact-detail:last-child { margin-bottom: 0; }
+.contact-detail svg { color: #2563eb; }
+
+/* --- RIGHT COLUMN: FORM CARD --- */
+.form-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+  margin-bottom: 2rem;
+}
+
+.form-header h2 {
+  font-size: 1.8rem;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 0.5rem;
+}
+
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s;
+  background: #f8fafc;
+  font-family: inherit;
+}
+
+.form-input:focus, .form-textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.submit-button {
+  width: 100%;
+  background: #0f172a;
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.submit-button:hover {
+  background: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr; /* Stack on mobile */
+  }
+  .map-card {
+    min-height: 400px;
+    order: 2; /* Map goes below form on mobile */
+  }
+}

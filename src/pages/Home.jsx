@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Snowflake, Wrench, Wind, ShieldCheck, Truck, Headphones } from 'lucide-react'; 
 import Hero3D from '../canvas/Hero3D';
 import './Home.css';
+import AboutSection from '../components/AboutSection';  
+import ContactSection from '../components/ContactSection';
 
 const Home = () => {
   return (
@@ -47,6 +49,7 @@ const Home = () => {
           <Hero3D />
         </div>
       </section>
+
 
       {/* --- CATEGORY GRID --- */}
       <section className="category-section">
@@ -102,6 +105,9 @@ const Home = () => {
         </div>
       </section>
 
+      {/* --- NEW CORPORATE IDENTITY SECTION --- */}
+      <AboutSection />
+
       {/* --- TRUST BANNER (Dark Section) --- */}
       <section style={{ background: '#0f172a', color: 'white', padding: '5rem 2rem' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -136,6 +142,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <ContactSection />
 
     </div>
   );

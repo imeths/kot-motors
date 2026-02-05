@@ -4,8 +4,8 @@
   left: 0;
   width: 100%;
   height: var(--header-height);
-  background: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
-  backdrop-filter: blur(12px); /* The "Frosted Glass" effect */
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(0,0,0,0.05);
   z-index: 1000;
   display: flex;
@@ -31,8 +31,11 @@
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.02em;
+  color: var(--primary);
+  cursor: pointer;
 }
 
+/* --- Desktop Menu Styling --- */
 .nav-menu {
   display: flex;
   gap: 2rem;
@@ -44,17 +47,30 @@
   font-weight: 500;
   color: var(--primary-light);
   transition: color 0.2s;
+  position: relative;
 }
 
 .nav-link:hover, .nav-link.active {
   color: var(--accent);
 }
 
+/* Add a small dot under active link */
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent);
+  border-radius: 2px;
+}
+
 .nav-button {
   background-color: var(--primary);
   color: white;
   padding: 0.6rem 1.2rem;
-  border-radius: 50px; /* Pill shape is trendy */
+  border-radius: 50px;
   font-size: 0.9rem;
   font-weight: 600;
   transition: transform 0.2s, background-color 0.2s;
@@ -63,4 +79,69 @@
 .nav-button:hover {
   background-color: var(--accent);
   transform: translateY(-1px);
+}
+
+/* --- Mobile Elements (Default Hidden) --- */
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-dropdown {
+  position: absolute;
+  top: var(--header-height);
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  
+  /* Animation states */
+  transform: translateY(-20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1; /* Behind navbar */
+}
+
+.mobile-dropdown.active {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobile-nav-list a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary);
+  display: block;
+}
+
+.mobile-btn {
+  background-color: var(--accent);
+  color: white !important;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* --- Responsive Media Query --- */
+@media (max-width: 768px) {
+  /* Hide Desktop Menu */
+  .desktop-menu {
+    display: none;
+  }
+
+  /* Show Mobile Toggle */
+  .mobile-toggle {
+    display: block;
+  }
 }

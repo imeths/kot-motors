@@ -1,0 +1,186 @@
+.about-section {
+  padding: 8rem 2rem;
+  background-color: #0f172a; /* The new Dark Background */
+  position: relative;
+  overflow: hidden; /* Keeps any glow effects contained */
+}
+
+/* Optional: Subtle background grid to match the Hero */
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Left Column: Text Styling (Updated for Dark Mode) --- */
+.eyebrow-text {
+  color: #60a5fa; /* Lighter Blue for better visibility on dark */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.85rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.about-content h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff; /* White text */
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.lead-text {
+  font-size: 1.25rem;
+  color: #e2e8f0; /* Very light grey */
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.body-text {
+  color: #94a3b8; /* Slate 400 - readable on dark */
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  font-size: 1.05rem;
+}
+
+/* Stats Row */
+.stat-row {
+  display: flex;
+  gap: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider */
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #3b82f6; /* Bright Blue */
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* --- Right Column: Cards --- */
+.cards-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.identity-card {
+  padding: 2.5rem;
+  border-radius: 16px;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  transition: transform 0.3s ease;
+}
+
+.identity-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Mission Card: Now "Glass" style (Darker than background) */
+.identity-card.mission {
+  background: rgba(255, 255, 255, 0.03); /* Subtle glass */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.identity-card.mission h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: white;
+}
+
+.identity-card.mission p {
+  color: #cbd5e1; /* Light grey */
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.identity-card.mission .icon-wrapper {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Vision Card: White (High Contrast Pop) */
+.identity-card.vision {
+  background: white;
+  border: none;
+  color: #0f172a;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3); /* Strong shadow */
+}
+
+.identity-card.vision h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #0f172a;
+}
+
+.identity-card.vision p {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.identity-card.vision .icon-wrapper {
+  background: #78aff7;
+  color: #2563eb;
+}
+
+/* Icon Common Styles */
+.icon-wrapper {
+  min-width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .about-content h2 {
+    font-size: 2.5rem;
+  }
+}
