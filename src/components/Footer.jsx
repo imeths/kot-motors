@@ -23,9 +23,9 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             <li><Link to="/">Home</Link></li>
+            <li><Link to="/about-us">About KOT Motors</Link></li>
             <li><Link to="/auto-ac-parts">Auto A/C Catalog</Link></li>
-            <li><Link to="/ac-refrigeration">Industrial Solutions</Link></li>
-            <li><Link to="/refrigeration-gases">Refrigeration Gases</Link></li>
+            <li><Link to="/contact-us">Contact Support</Link></li>
           </ul>
         </div>
 
