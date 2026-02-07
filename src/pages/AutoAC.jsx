@@ -57,7 +57,7 @@ const AutoAC = () => {
           
           {/* Breadcrumbs */}
           <div className="breadcrumbs">
-            <Link to="/">Home</Link> <span>/</span> <span style={{ color: '#e2e8f0' }}>Auto A/C Parts</span>
+            <Link to="/">Home</Link> <span>/</span> <span style={{ color: '#e2e8f0' }}>Products</span>
           </div>
 
           <motion.div 

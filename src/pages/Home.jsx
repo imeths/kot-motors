@@ -38,7 +38,7 @@ const Home = () => {
             <Link to="/contact-us" className="btn-primary">
               Get a Quote
             </Link>
-            <Link to="/auto-ac-parts" className="btn-secondary">
+            <Link to="/products" className="btn-secondary">
               View Catalog
             </Link>
           </div>
@@ -69,7 +69,7 @@ const Home = () => {
             <p style={{ color: '#64748b', lineHeight: '1.6', marginBottom: '1.5rem' }}>
               Compressors, condensers, evaporators, and control valves for all major vehicle makes.
             </p>
-            <Link to="/auto-ac-parts" className="card-link">
+            <Link to="/products" className="card-link">
               View Catalog <ArrowRight size={16} style={{ marginLeft: '8px' }}/>
             </Link>
           </div>

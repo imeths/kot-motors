@@ -8,10 +8,20 @@ const Footer = () => {
     <footer className="site-footer">
       <div className="footer-container">
         
-        {/* Column 1: Brand */}
+        {/* Column 1: Brand & Logo */}
         <div className="footer-col brand-col">
-          <div className="footer-logo">
-            <span style={{ color: '#2563eb' }}>KOT</span> Motors
+          <div className="footer-logo" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            
+            {/* Logo Image */}
+            <img 
+              src="/vite.svg" 
+              alt="KOT Motors Logo" 
+              style={{ height: '32px', width: 'auto' }} 
+            />
+            
+            <span>
+              <span style={{ color: '#2563eb' }}>KOT</span> Motors
+            </span>
           </div>
           <p>
             Your trusted partner for OEM automotive cooling solutions and industrial electrical components.
@@ -24,7 +34,7 @@ const Footer = () => {
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about-us">About KOT Motors</Link></li>
-            <li><Link to="/auto-ac-parts">Auto A/C Catalog</Link></li>
+            <li><Link to="/products">Auto A/C Catalog</Link></li>
             <li><Link to="/contact-us">Contact Support</Link></li>
           </ul>
         </div>

@@ -23,7 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           
           {/* This connects the URL "/auto-ac-parts" to AutoAC.jsx */}
-          <Route path="/auto-ac-parts" element={<AutoAC />} /> 
+          <Route path="/products" element={<AutoAC />} /> 
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/about-us" element={<About />} />
 
