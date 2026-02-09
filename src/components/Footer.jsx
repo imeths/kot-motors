@@ -14,7 +14,7 @@ const Footer = () => {
             
             {/* Logo Image */}
             <img 
-              src="/vite.svg" 
+              src="/tab-icon.svg" 
               alt="KOT Motors Logo" 
               style={{ height: '32px', width: 'auto' }} 
             />
