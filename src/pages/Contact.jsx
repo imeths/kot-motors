@@ -31,7 +31,7 @@ const Contact = () => {
         {/* LEFT: Google Map with Overlay */}
         <div className="map-card">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.786319808991!2d79.86546307483568!3d6.916127993083516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25974c04291ad%3A0x1208c903337a7266!2sPanchikawatta%20Rd%2C%20Colombo%2001000!5e0!3m2!1sen!2slk!4v1709724000000!5m2!1sen!2slk" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5601.871303376797!2d79.8939557349175!3d6.876081070096084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25b007c8103f7%3A0x20271e4bdb8ed166!2sKOT%20motors!5e0!3m2!1sen!2slk!4v1770438357191!5m2!1sen!2slk" 
             className="map-frame" 
             allowFullScreen="" 
             loading="lazy" 
@@ -43,11 +43,11 @@ const Contact = () => {
           <div className="map-overlay">
             <div className="contact-detail">
               <MapPin size={18} />
-              <span>123 Panchikawatta Rd, Colombo 10</span>
+              <span>126 Stanley Tilakaratne Mawatha, Nugegoda</span>
             </div>
             <div className="contact-detail">
               <Phone size={18} />
-              <span>+94 11 234 5678</span>
+              <span>+94 72 417 7482 / +94 77 700 3052</span>
             </div>
             <div className="contact-detail">
               <Clock size={18} />
@@ -67,17 +67,17 @@ const Contact = () => {
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
               <div className="form-group">
                 <label className="form-label">First Name</label>
-                <input type="text" className="form-input" placeholder="Priyantha" />
+                <input type="text" className="form-input" placeholder="John" />
               </div>
               <div className="form-group">
                 <label className="form-label">Last Name</label>
-                <input type="text" className="form-input" placeholder="Perera" />
+                <input type="text" className="form-input" placeholder="Doe" />
               </div>
             </div>
 
             <div className="form-group">
               <label className="form-label">Email Address</label>
-              <input type="email" className="form-input" placeholder="priyantha@example.com" />
+              <input type="email" className="form-input" placeholder="john.doe@example.com" />
             </div>
 
             <div className="form-group">

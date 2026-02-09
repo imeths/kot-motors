@@ -39,6 +39,13 @@
   line-height: 1.6;
 }
 
+.contact-info a {
+  color: #64748b;
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
 .info-items {
   display: flex;
   flex-direction: column;

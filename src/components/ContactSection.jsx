@@ -26,7 +26,7 @@ const ContactSection = () => {
               <div className="icon-box"><Phone size={20} /></div>
               <div>
                 <h4>Call Us</h4>
-                <p>+94 11 234 5678</p>
+                <a href="tel:+94724177482">+94 72 417 7482</a> / <a href="tel:+94777003052">+94 77 700 3052</a>
               </div>
             </div>
 
@@ -34,7 +34,7 @@ const ContactSection = () => {
               <div className="icon-box"><Mail size={20} /></div>
               <div>
                 <h4>Email Us</h4>
-                <p>sales@kotmotors.com</p>
+                <a href="mailto:Kotmotors94@gmail.com">kotmotors94@gmail.com</a>
               </div>
             </div>
 
@@ -42,7 +42,7 @@ const ContactSection = () => {
               <div className="icon-box"><MapPin size={20} /></div>
               <div>
                 <h4>Visit Workshop</h4>
-                <p>123 Panchikawatta Rd, Colombo 10</p>
+                <a href="https://maps.app.goo.gl/FFRQ2jU4CxgmEbBQ6" target="_blank" rel="noopener noreferrer">126 Stanley Tilakaratne Mawatha, Nugegoda</a>
               </div>
             </div>
           </div>
@@ -53,12 +53,12 @@ const ContactSection = () => {
           <form onSubmit={handleSubmit} className="contact-form">
             <div className="form-group">
               <label>Full Name</label>
-              <input type="text" placeholder="e.g. Priyantha Perera" required />
+              <input type="text" placeholder="e.g. John Doe" required />
             </div>
 
             <div className="form-group">
               <label>Email Address</label>
-              <input type="email" placeholder="priyantha@example.com" required />
+              <input type="email" placeholder="john.doe@example.com" required />
             </div>
 
             <div className="form-group">

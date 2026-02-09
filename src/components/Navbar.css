@@ -23,6 +23,7 @@
 }
 
 .logo-text {
+  margin-left: 10px;
   font-weight: 800;
   color: var(--accent);
 }

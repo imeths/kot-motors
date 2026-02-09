@@ -34,7 +34,7 @@ const Footer = () => {
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about-us">About KOT Motors</Link></li>
-            <li><Link to="/products">Auto A/C Catalog</Link></li>
+            <li><Link to="/products">Our Products</Link></li>
             <li><Link to="/contact-us">Contact Support</Link></li>
           </ul>
         </div>
@@ -45,15 +45,15 @@ const Footer = () => {
           <ul className="contact-list">
             <li>
               <MapPin size={18} className="icon" />
-              <span>123 Panchikawatta Rd, Colombo 10</span>
+              <a href="https://maps.app.goo.gl/FFRQ2jU4CxgmEbBQ6" target="_blank" rel="noopener noreferrer">126 Stanley Tilakaratne Mawatha, Nugegoda</a>
             </li>
             <li>
               <Phone size={18} className="icon" />
-              <span>+94 11 234 5678</span>
+              <a href="tel:+94724177482">+94 72 417 7482</a> / <a href="tel:+94777003052">+94 77 700 3052</a>
             </li>
             <li>
               <Mail size={18} className="icon" />
-              <span>sales@kotmotors.com</span>
+              <a href="mailto:Kotmotors94@gmail.com">kotmotors94@gmail.com</a>
             </li>
           </ul>
         </div>
@@ -62,7 +62,7 @@ const Footer = () => {
         <div className="footer-col">
           <h3>Connect</h3>
           <div className="social-icons">
-            <a href="#" className="social-link"><Facebook size={20} /></a>
+            <a href="https://www.facebook.com/61572186687373/" className="social-link"><Facebook size={20} /></a>
             <a href="#" className="social-link"><Instagram size={20} /></a>
             <a href="#" className="social-link"><Linkedin size={20} /></a>
           </div>
@@ -74,8 +74,8 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} KOT Motors. All rights reserved.</p>
         <div className="legal-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
         </div>
       </div>
     </footer>

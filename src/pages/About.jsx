@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Shield, Users, Globe, Award } from 'lucide-react';
+import { ShieldCheck, Globe, Users, Shield, Award } from 'lucide-react'; // Imports fixed
 import './About.css';
 
 const About = () => {
@@ -10,15 +10,44 @@ const About = () => {
       {/* --- HERO SECTION --- */}
       <header className="about-hero">
         <div className="hero-content">
-          <h1>More Than Just Parts</h1>
-          <p>
+          
+          {/* Breadcrumbs */}
+          <div className="breadcrumbs fade-in-up delay-1">
+            <Link to="/">HOME</Link>
+            <span>/</span>
+            <span className="current">ABOUT US</span>
+          </div>
+
+          {/* Main Title */}
+          <h1 className="fade-in-up delay-2">
+            More Than Just Parts
+          </h1>
+          
+          <p className="fade-in-up delay-3">
             We are the technical backbone for Sri Lanka's leading automotive workshops. 
             Since 2010, KOT Motors has stood for one thing: <strong>Uncompromising Quality.</strong>
           </p>
+
+          {/* Trust Badges */}
+          <div className="hero-badges fade-in-up delay-4">
+            <div className="badge-item">
+              <ShieldCheck size={18} className="badge-icon" />
+              <span>Est. 2010</span>
+            </div>
+            <div className="badge-item">
+              <Globe size={18} className="badge-icon" />
+              <span>Direct Importers</span>
+            </div>
+            <div className="badge-item">
+              <Users size={18} className="badge-icon" />
+              <span>500+ Partners</span>
+            </div>
+          </div>
+
         </div>
       </header>
 
-      {/* --- THE STORY & LEADERSHIP --- */}
+      {/* --- STORY SECTION --- */}
       <section className="story-section">
         <div className="story-container">
           <div className="story-text">
@@ -48,7 +77,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* --- CORE VALUES GRID --- */}
+      {/* --- VALUES SECTION --- */}
       <section className="values-section">
         <div className="values-container">
           <div className="values-header">

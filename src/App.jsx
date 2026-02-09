@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import AutoAC from './pages/AutoAC'; // <--- MAKE SURE THIS IS UNCOMMENTED
 import Contact from './pages/Contact';
 import About from './pages/About';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 
 // Keep these commented until you make the files, or the app will crash
 // import ACRefrigeration from './pages/ACRefrigeration';
@@ -26,6 +28,8 @@ function App() {
           <Route path="/products" element={<AutoAC />} /> 
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/about-us" element={<About />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
 
           
           {/* <Route path="/ac-refrigeration" element={<ACRefrigeration />} />

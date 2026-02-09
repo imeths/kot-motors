@@ -10,7 +10,7 @@
   margin: 0 auto;
   padding: 0 2rem 4rem;
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 0.5fr; /* Custom widths */
+  grid-template-columns: 1.5fr 1fr 1.5fr 0.5fr; /* Custom widths */
   gap: 3rem;
 }
 
@@ -28,6 +28,19 @@
   color: white;
   margin-bottom: 1rem;
   letter-spacing: -0.02em;
+}
+
+.footer-logo img {
+    transition: filter 0.3s ease;
+}
+
+.footer-logo:hover img {
+filter: 
+    drop-shadow(1px 1px 0px #ffffff)
+    drop-shadow(-1px -1px 0px #ffffff)
+    drop-shadow(1px -1px 0px #ffffff)
+    drop-shadow(-1px 1px 0px #ffffff)
+    drop-shadow(0 0 5px #ffffff);
 }
 
 .brand-col p {
