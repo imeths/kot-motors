@@ -52,53 +52,55 @@ const Home = () => {
 
 
       {/* --- CATEGORY GRID --- */}
-      <section className="category-section">
+<section className="category-section">
         <div className="section-header">
           <h2>Our Expertise</h2>
-          <p style={{ color: '#64748b', fontSize: '1.1rem' }}>Select a category to browse parts</p>
+          <p style={{ color: '#64748b', fontSize: '1.1rem' }}>
+            Specialized components for complete automotive climate control
+          </p>
         </div>
         
         <div className="grid-container">
           
-          {/* Card 1: Auto A/C */}
+          {/* Card 1: The Core Power */}
           <div className="category-card">
             <div style={{ background: '#eff6ff', width: 'fit-content', padding: '12px', borderRadius: '12px', marginBottom: '1.5rem' }}>
               <Snowflake size={32} color="#2563eb" />
             </div>
-            <h3>Auto A/C Parts</h3>
+            <h3>Compressors & Clutches</h3>
             <p style={{ color: '#64748b', lineHeight: '1.6', marginBottom: '1.5rem' }}>
-              Compressors, condensers, evaporators, and control valves for all major vehicle makes.
+              New and reconditioned OEM compressors (Denso, Sanden) and magnetic clutch assemblies.
             </p>
             <Link to="/products" className="card-link">
-              View Catalog <ArrowRight size={16} style={{ marginLeft: '8px' }}/>
+              View Compressors <ArrowRight size={16} style={{ marginLeft: '8px' }}/>
             </Link>
           </div>
 
-          {/* Card 2: A/C & Refrigeration */}
-          <div className="category-card">
-            <div style={{ background: '#eff6ff', width: 'fit-content', padding: '12px', borderRadius: '12px', marginBottom: '1.5rem' }}>
-              <Wrench size={32} color="#2563eb" />
-            </div>
-            <h3>Industrial A/C</h3>
-            <p style={{ color: '#64748b', lineHeight: '1.6', marginBottom: '1.5rem' }}>
-              Heavy-duty cooling solutions, electrical components, and repair kits for commercial units.
-            </p>
-            <Link to="/ac-refrigeration" className="card-link">
-              View Solutions <ArrowRight size={16} style={{ marginLeft: '8px' }}/>
-            </Link>
-          </div>
-
-          {/* Card 3: Refrigeration Gases */}
+          {/* Card 2: Heat Exchange */}
           <div className="category-card">
             <div style={{ background: '#eff6ff', width: 'fit-content', padding: '12px', borderRadius: '12px', marginBottom: '1.5rem' }}>
               <Wind size={32} color="#2563eb" />
             </div>
-            <h3>Refrigeration Gases</h3>
+            <h3>Condensers & Evaporators</h3>
             <p style={{ color: '#64748b', lineHeight: '1.6', marginBottom: '1.5rem' }}>
-              Certified high-purity refrigerants (R134a, R404a) and specialized gases for any system.
+              High-efficiency parallel flow condensers and laminated evaporators for rapid cooling.
             </p>
-            <Link to="/refrigeration-gases" className="card-link">
-              Check Availability <ArrowRight size={16} style={{ marginLeft: '8px' }}/>
+            <Link to="/products" className="card-link">
+              View Cooling Units <ArrowRight size={16} style={{ marginLeft: '8px' }}/>
+            </Link>
+          </div>
+
+          {/* Card 3: Electrical & Repair */}
+          <div className="category-card">
+            <div style={{ background: '#eff6ff', width: 'fit-content', padding: '12px', borderRadius: '12px', marginBottom: '1.5rem' }}>
+              <Wrench size={32} color="#2563eb" />
+            </div>
+            <h3>Electrical & Repair Kits</h3>
+            <p style={{ color: '#64748b', lineHeight: '1.6', marginBottom: '1.5rem' }}>
+              Control valves, pressure sensors, blower motors, and system seal kits for precision repairs.
+            </p>
+            <Link to="/products" className="card-link">
+              View Electrical <ArrowRight size={16} style={{ marginLeft: '8px' }}/>
             </Link>
           </div>
 
