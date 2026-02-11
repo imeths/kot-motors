@@ -19,9 +19,12 @@ const Home = () => {
             fontWeight: '700', 
             letterSpacing: '2px', 
             fontSize: '0.8rem', 
-            textTransform: 'uppercase', 
-            display: 'block', 
-            marginBottom: '1.5rem' 
+            textTransform: 'uppercase',
+            display: 'inline-block', 
+            marginBottom: '1.5rem',
+            padding: '6px 12px',
+            borderRadius: '5px',
+            border: '1px solid #2563eb',
           }}>
             Premium Automotive Parts
           </span>
